@@ -1,0 +1,11 @@
+services:
+  olmocr:
+    image: olmocr:latest
+    container_name: olmocr
+    runtime: nvidia
+    shm_size: 64g
+    volumes:
+      - /appdata/olmocr/dolma_previews:/app/olmocr/dolma_previews
+      - /appdata/olmocr/localworkspace:/app/olmocr/localworkspace
+      - /appdata/olmocr/models:/root/.cache/huggingface/hub
+    restart: unless-stopped
