@@ -1,5 +1,3 @@
-Here are the concise bash commands to use your Dockerfile and docker-compose:
-
 ------------------------------------------------------
 Requirements:
 https://docs.docker.com/engine/install/ubuntu/
